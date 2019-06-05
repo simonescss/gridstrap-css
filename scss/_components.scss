@@ -1,0 +1,164 @@
+// main: gridstrap.scss
+
+/* Buttons */
+
+.btn{
+    display: inline-block;
+    padding: 15px 35px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #4F47D8;
+    color: #fff;
+}
+.neg{
+    background: none;
+    color: $primary_color;
+    border: 3px solid $primary_color;
+}
+.btn.neg:hover{
+    background: $primary_color;
+    color: #fff;
+}
+.rad{
+    border-radius: 60px;
+}
+.btn.rad:hover{
+    background: $primary_color;
+    color: #fff;
+}
+.btn-secondary{
+    background: $secondary_color;
+    color: $primary_color;
+}
+
+/*----
+Cards
+-----*/
+
+.card{
+   /* width: 100%; */
+    height: auto;
+    background: $primary_color;
+    color: $grey;
+    border-radius: 15px;
+    transition: all ease 0.5s;
+    .top{
+        padding: 30px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .bottom{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px 10px 10px 0px;
+    }
+    &:hover{
+        box-shadow: 11px 9px 35px rgba(0,0,0,0.2);
+        transition: all ease 0.5s;
+        cursor: pointer;
+        transform: translateY(-1rem);
+    }
+}
+
+.circle{
+    border: solid 4px #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i {
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 6px;
+}
+.arrow_right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.card.dark_violet{
+     background: $dark-primary_color;
+   
+}
+.card.light_blue{
+    background: $secondary_color;
+    color: $dark-primary_color;
+}
+.card.grey{
+    background: $grey;
+    color: $dark-primary_color;
+}
+.card.grey .circle{
+    border: solid 4px $dark-primary_color;
+}
+.card.light_blue .circle{
+    border: solid 4px $dark-primary_color;
+}
+.card.grey i{
+    border-color: $dark-primary_color;
+}
+.card.light_blue i{
+    border-color: $dark-primary_color;
+}
+.card.dark{
+    background: linear-gradient(to top right, #333, #444);
+    color: $grey;
+}
+
+
+@media(max-width: $tablet){
+    .card:hover{
+        transform: none;
+    }
+    .scroll-x .card{
+        width: 80%;
+        flex: 0 0 auto;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .cards.scroll-x{
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+/*       white-space: nowrap;*/
+    }
+    #sec_typo {
+        h2{
+        font-size: 30px;
+        }
+    }
+    #sec_comp{
+        h2{
+            font-size: 30px;
+        }
+    }
+    #sec_grids{
+        h2{
+            font-size: 30px;
+        }
+    }
+    #sec_navbar{
+        h2{
+            font-size: 30px;
+        }
+    }
+    #docs{
+        h2{
+            font-size: 36px;
+        }
+    }
+    #sec_ex{
+        h2{
+            font-size: 30px;
+        }
+    }
+}

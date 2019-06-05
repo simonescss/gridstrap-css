@@ -1,0 +1,20 @@
+// main: gridstrap.scss
+
+/* colors */
+$primary_color: #645CED;
+$dark-primary_color: #4F47D8;
+$secondary_color: #02F1C9;
+$grey: #f0f0f0;
+
+/* gutters */
+$gutter_1: 15px;
+$gutter_2: 30px;
+$gutter_3: 60px;
+$gutter_4: 80px;
+
+/* header */
+$no_head: calc(100vh - 64px);
+
+/* media query */
+$tablet: 990px;
+$phone: 768px;

@@ -1,0 +1,19 @@
+// main: gridstrap.scss
+
+/* Typo */
+.huge, h1  { letter-spacing: -1px; font-size: 80px; line-height: 1.05; font-weight: 900; margin: 0;}
+.large, h2  { font-size: 50px; line-height: 1.14; font-weight: 900; margin: 0;}
+.bigger, h3 { font-size: 26px; line-height: 1.38; font-weight: 900; margin: 0;}
+.big, h4  { font-size: 22px; line-height: 1.38; font-weight: 900; margin: 0;}
+.normal, h5 { font-size: 18px; line-height: 1.38; font-weight: 900; margin: 0;}
+.small, h6 { font-size: 14px; line-height: 1.2; font-weight: 900; margin: 0;}
+
+@media(max-width: $tablet){
+    .huge, h1  { letter-spacing: -1px; font-size: 40px; line-height: 1.05; font-weight: 900; margin: 0;}
+    .large, h2  { font-size: 30px; line-height: 1.14; font-weight: 900; margin: 0;}
+    .bigger, h3 { font-size: 20px; line-height: 1.38; font-weight: 900; margin: 0;}
+    .big, h4  { font-size: 18px; line-height: 1.38; font-weight: 900; margin: 0;}
+    .normal, h5 { font-size: 18px; line-height: 1.38; font-weight: 900; margin: 0;}
+    .small, h6 { font-size: 14px; line-height: 1.2; font-weight: 900; margin: 0;}
+}
+

@@ -1,0 +1,102 @@
+@media(max-width: 1100px){
+    
+    /* Grids */
+    .grid-50, .grid-50.gap-4{
+        grid-template-columns: 100%;
+    }
+    .grids .title h2{
+        font-size: 40px;
+    }
+     .navbar .title h2{
+        font-size: 40px;
+    }
+    /* Cover */
+    .right{
+        display: none;
+    }
+    .copy{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .copy h1{
+        font-size: 60px;
+    }
+    .copy p{
+        font-size: 18px;
+    }
+    .cta{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .btn.docs:hover{
+        background: #fff;
+        color: var(--primary_color);
+    }
+    .download{
+        width: 100%;
+        margin: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        border: none;
+    }
+    
+    /* Illustration */
+    .illustration{
+        display: block;
+        height: auto;
+        padding-top: 20px;
+    }
+    .title h2{
+        font-size: 40px;
+    }
+    .illustration .copy h2{
+        font-size: 40px;
+    }
+    
+    /* Documantation */
+    .docs{
+        margin: 0;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        border: none;
+        background: #fff;
+        color: var(--primary_color)
+    }
+    .pad_doc{
+        padding: 0;
+    }
+    .docs .title h2{
+        font-size: 30px;
+    }
+    
+    /* Menu */
+    .menu{
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        flex-direction: row;
+    }
+    
+    .menu .container{
+        width: 100%;
+        margin: 0;
+    }
+    
+    /* Code */
+    pre {
+		overflow-x: auto;
+		white-space: pre-wrap;
+		white-space: -moz-pre-wrap !important;
+		white-space: -pre-wrap;
+		white-space: -o-pre-wrap;
+		word-wrap: break-word;
+	}
+   
+
+}

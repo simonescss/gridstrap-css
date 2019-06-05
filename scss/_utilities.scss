@@ -1,0 +1,470 @@
+// main: gridstrap.scss
+
+/* Text align */
+
+.tac{
+    text-align: center;
+}
+.tar{
+    text-align: right;
+}
+.tal{
+    text-align: left;
+}
+
+/*-----
+Gaps & Margins
+------*/
+
+.gap-1{
+    grid-gap: $gutter_1;
+}
+.gap-2{
+   grid-gap: $gutter_2;
+}
+.gap-3{
+    grid-gap: $gutter_3;
+}
+.gap-4{
+    grid-gap: $gutter_4;
+}
+.my-1{
+    margin-top: $gutter_1;
+    margin-bottom: $gutter_1;
+}
+.my-2{
+    margin-top: $gutter_2;
+    margin-bottom: $gutter_2;
+}
+.my-3{
+    margin-top: $gutter_3;
+    margin-bottom: $gutter_3;
+}
+.my-4{
+    margin-top: $gutter_4;
+    margin-bottom: $gutter_4;
+}
+.mx-1{
+    margin-left: $gutter_1;
+    margin-right: $gutter_1;
+}
+.mx-2{
+    margin-left: $gutter_2;
+    margin-right: $gutter_2;
+}
+.mx-3{
+    margin-left: $gutter_3;
+    margin-right: $gutter_3;
+}
+.mx-4{
+    margin-left: $gutter_4;
+    margin-right: $gutter_4;
+}
+.py-1{
+    padding-top: $gutter_1;
+    padding-bottom: $gutter_1;
+}
+.py-2{
+    padding-top: $gutter_2;
+    padding-bottom: $gutter_2;
+}
+.py-3{
+    padding-top: $gutter_3;
+    padding-bottom: $gutter_3;
+}
+.py-4{
+    padding-top: $gutter_4;
+    padding-bottom: $gutter_4;
+}
+
+/*-----
+Cover
+------*/
+
+.left{
+    height: $no_head;
+    background: linear-gradient(to left top, $primary_color, $dark-primary_color);
+}
+.right{
+    height: $no_head;
+    background: $secondary_color;
+}
+.nested span{
+    width: 100%;
+    height: calc(#{$no_head}/2);
+}
+.nested span:nth-child(1){
+    background: $secondary_color;
+}
+.nested span:nth-child(2){
+    background: #fff;
+}
+.nested span:nth-child(3){
+    background: $dark-primary_color;
+}
+.nested span:nth-child(4){
+    background: $grey;
+}
+.docs{
+    box-shadow: 9px 20px 66px rgba(0,0,0,0.2);
+}
+.download{
+    border: 3px solid $secondary_color;
+    box-shadow: 9px 20px 66px rgba(0,0,0,0.2);
+}
+.btn.docs{
+    border-color: #fff;
+    color: #fff;
+}
+.btn.docs:hover{
+    background: #fff;
+    color: $primary_color;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.copy{
+    width: 75%;
+    h1{
+        font-size: 100px;
+        font-weight: 800;
+        margin: 20px 0px;
+        color: #fff;
+    }
+    p{
+        margin: 20px 0px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.cta{
+    align-self: flex-start;
+}
+
+/*-----
+Illustration
+------*/
+
+.illustration{
+    background: $dark-primary_color;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .copy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+.title{
+    background: $secondary_color;
+    h2{
+        color: $dark-primary_color;
+    }
+}
+
+/* Grids */
+
+.grids .title{
+    background: $primary_color;
+    h2{
+        color: #fff;
+        font-size: 60px;
+    }
+}
+.grids article > div {
+    background: $secondary_color;
+    padding: 1.5rem;
+}
+.grids article > div p{
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
+    margin: 0;
+}
+.class{
+    display: flex;
+    font-size: 18px;
+    a{
+        display: inline-block;
+        padding: 10px 20px;
+        &:first-child{
+            background: $primary_color;
+        }
+        &:last-child{
+            background: $grey;
+            color: $primary_color;
+        }
+    }
+}
+
+.grids h3{
+    color: $dark-primary_color;
+    margin: 20px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+/* Navbar */
+
+.navbar .title{
+    background: $primary_color;
+}
+.navbar .title h2{
+    color: #fff;
+    font-size: 60px;
+}
+.btn_active{
+    background: $secondary_color;
+    color: $dark-primary_color;
+}
+.navbar .docs{
+    color: $dark-primary_color;
+    background: $secondary_color;
+}
+
+/* Typo */
+
+.typo .title{
+    background: $primary_color;
+    h2{
+        color: #fff;
+        font-size: 60px;
+    }
+}
+.typo .docs{
+    color: $dark-primary_color;
+    background: $secondary_color;
+}
+
+/* Components */
+
+.comp .title{
+    background: $primary_color;
+    h2{
+        color: #fff;
+        font-size: 60px;
+    }
+}
+.comp .docs{
+    color: $dark-primary_color;
+    background: $secondary_color;
+}
+.download i{
+    border: none;
+    margin-right: 0;
+}
+#btn_ex i{
+    border: none;
+    margin-right: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+#btn_ex{
+    background: $secondary_color;
+    color: $dark-primary_color;
+}
+.docs{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/*-----
+Code / Pre
+------*/
+
+pre{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	overflow-y: hidden;
+	font-size: 18px;
+	line-height: 22px;
+	background: #efefef;
+	border: 1px solid #777;
+    border-left: 10px solid $primary_color;
+	background: #333;
+    color: $secondary_color;
+    code{
+        color: $secondary_color;
+        padding: 0;
+    }
+}
+pre code xmp::selection{
+    background: $secondary_color;
+    color: #fff;
+}
+xmp{
+    font-family: 'Source Code Pro';
+    font-weight: regular;
+    padding: 0;
+}
+.bottom_footer{
+    background: $dark-primary_color;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+}
+.bottom_footer:hover{
+    background: $dark-primary_color;
+    color: #fff;
+}
+footer p{
+    background: $secondary_color;
+    margin: 0;
+    font-size: 14px;
+    padding: 20px;
+    line-height: 20px;
+    a{
+        font-weight: bold;
+        color: $dark-primary_color;
+    }
+}
+footer .social{
+    background: $primary_color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a{
+        font-size: 50px;
+        color: rgb(63, 56, 193);
+        &:hover{
+            color: #fff;
+        }
+    }
+    i{
+        border: none;
+    }
+}
+@media(max-width: $tablet){
+    pre{
+        font-size: 14px;
+		overflow-x: auto;
+		white-space: pre-wrap;
+		white-space: -moz-pre-wrap !important;
+		white-space: -pre-wrap;
+		white-space: -o-pre-wrap;
+		word-wrap: break-word;
+    }
+
+    /* Grids */
+    .grid-50, .grid-50.gap-4{
+        grid-template-columns: 100%;
+    }
+    .grids .title h2{
+        font-size: 40px;
+    }
+     .navbar .title h2{
+        font-size: 40px;
+    }
+    
+    /* Cover */
+    .right{
+        display: none;
+    }
+    .copy{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .copy h1{
+        font-size: 60px;
+    }
+    .copy p{
+        font-size: 18px;
+    }
+    .cta{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .btn.docs{
+        color: $dark-primary_color;
+    }
+    .btn.docs:hover{
+        background: #fff;
+        color: $dark-primary_color;
+    }
+    .download{
+        width: 100%;
+        margin: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        border: none;
+
+    }
+    
+    /* Illustration */
+    .illustration{
+        display: block;
+        height: auto;
+        padding-top: 20px;
+    }
+    // .title h2{
+    //     font-size: 30px;
+    // }
+    .illustration .copy h2{
+        font-size: 40px;
+    }
+    
+    /* Documantation */
+    .docs{
+        margin: 0;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        border: none;
+        background: #fff;
+        color: $primary_color;
+    }
+    .pad_doc{
+        padding: 0;
+    }
+    .docs .title h2{
+        font-size: 30px;
+    }
+    
+    /* Menu */
+    .menu{
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        flex-direction: row;
+    }
+    .menu .container{
+        width: 100%;
+        margin: 0;
+    }
+    .docs h3{
+        font-size: 18px;
+    }
+    footer .social{
+        padding: 20px 0px;
+        a{
+            font-size: 40px;
+        }
+    }
+
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}

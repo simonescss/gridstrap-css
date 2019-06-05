@@ -1,0 +1,136 @@
+// main: gridstrap.scss
+
+/*+++++++++*******
+GRID SYSTEM
+*****************/
+
+/*----
+25%
+-----*/
+
+.grid-25 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+.grid-25[class*="gap-1"]{
+     grid-template-columns: repeat(auto-fill, minmax(calc(25% - #{$gutter_1}), 1fr));
+}
+.grid-25[class*="gap-2"]{
+    grid-template-columns: repeat(auto-fill, minmax(calc(25% - #{$gutter_2}), 1fr));
+}
+.grid-25[class*="gap-3"]{
+    grid-template-columns: repeat(auto-fill, minmax(calc(25% - #{$gutter_3}), 1fr));
+}
+.grid-25[class*="gap-4"]{
+    grid-template-columns: repeat(auto-fill, minmax(calc(25% - #{$gutter_4}), 1fr));
+}
+
+/*----
+50%
+-----*/
+
+.grid-50 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+.grid-50[class*="gap-1"]{
+     grid-template-columns: repeat(auto-fill, minmax(calc(50% - #{$gutter_1}), 1fr));
+}
+.grid-50[class*="gap-2"]{
+     grid-template-columns: repeat(auto-fill, minmax(calc(50% - #{$gutter_2}), 1fr));
+}
+.grid-50[class*="gap-3"]{
+     grid-template-columns: repeat(auto-fill, minmax(calc(50% - #{$gutter_3}), 1fr));
+}
+.grid-50[class*="gap-4"]{
+     grid-template-columns: repeat(auto-fill, minmax(calc(50% - #{$gutter_4}), 1fr));
+}
+
+/*----
+33.33%
+-----*/
+
+.grid-33 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+}
+.grid-33[class*="gap-1"]{
+     grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - #{$gutter_1}), 1fr));
+}
+.grid-33[class*="gap-2"]{
+     grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - #{$gutter_2}), 1fr));
+}
+.grid-33[class*="gap-3"]{
+     grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - #{$gutter_3}), 1fr));
+}
+.grid-33[class*="gap-4"]{
+     grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - #{$gutter_4}), 1fr));
+}
+
+/*----
+66.66% // 33.33%
+-----*/
+
+.grid-66 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/*----
+33.33% // 66.66% 
+-----*/
+
+.grid-66-reverse {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/*----
+75% // 25%
+-----*/
+
+.grid-75 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+/*----
+25% // 75%
+-----*/
+
+.grid-75-reverse {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+@media(max-width: $tablet){
+    .grid-25, .grid-25.gap-1, .grid-25.gap-2, .grid-25.gap-3, .grid-25.gap-4 {
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - #{$gutter_4}), 1fr));
+    }
+    .grid-33, .grid-33.gap-1, .grid-33.gap-2, .grid-33.gap-3, .grid-33.gap-4{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+@media(max-width: $phone){
+    .grid-25, .grid-25.gap-1, .grid-25.gap-2, .grid-25.gap-3, .grid-25.gap-4 {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    .grid-33, .grid-33.gap-1, .grid-33.gap-2, .grid-33.gap-3, .grid-33.gap-4{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    .grid-50, .grid-50.gap-1, .grid-50.gap-2, .grid-50.gap-3, .grid-50.gap-4{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    .grid-66, .grid-66.gap-1, .grid-66.gap-2, .grid-66.gap-3, .grid-66.gap-4{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    .grid-66-reverse, .grid-66-reverse.gap-1, .grid-66-reverse.gap-2, .grid-66-reverse.gap-3, .grid-66-reverse.gap-4{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    .grid-75, .grid-75.gap-1, .grid-75.gap-2, .grid-75.gap-3, .grid-75.gap-4{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    .grid-75-reverse, .grid-75-reverse.gap-1, .grid-75-reverse.gap-2, .grid-75-reverse.gap-3, .grid-75-reverse.gap-4{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
