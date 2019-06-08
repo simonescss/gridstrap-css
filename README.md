@@ -11,8 +11,17 @@ Documentation: https://gridstrap.netlify.com
 
 ## Usage
 
-```
-<div> prova </div>
+### CSS
+```html
+<head>
+  <link rel="stylesheet" href="gridstrap.min.css">
+</head>
 ```
 
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+### JavaScript
+```html
+<script src="gridstrap.js"></script>
+```
+
+## License
+MIT © 2019
