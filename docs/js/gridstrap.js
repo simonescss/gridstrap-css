@@ -32,10 +32,10 @@
     var sec_comp = document.getElementById("sec_comp");
     var btn_comp = document.getElementById("btn_comp");
     var sec_active_comp = sec_comp.offsetTop;
-    // Components
-    var sec_ex = document.getElementById("sec_ex");
-    var btn_ex = document.getElementById("btn_ex");
-    var sec_active_ex = sec_ex.offsetTop;
+    // Example
+    // var sec_ex = document.getElementById("sec_ex");
+    // var btn_ex = document.getElementById("btn_ex");
+    // var sec_active_ex = sec_ex.offsetTop;
     
   function docNavbar() {
         
