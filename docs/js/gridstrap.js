@@ -33,9 +33,9 @@
     var btn_comp = document.getElementById("btn_comp");
     var sec_active_comp = sec_comp.offsetTop;
     // Example
-    // var sec_ex = document.getElementById("sec_ex");
-    // var btn_ex = document.getElementById("btn_ex");
-    // var sec_active_ex = sec_ex.offsetTop;
+    var sec_ex = document.getElementById("sec_ex");
+    var btn_ex = document.getElementById("btn_ex");
+    var sec_active_ex = sec_ex.offsetTop;
     
   function docNavbar() {
         
