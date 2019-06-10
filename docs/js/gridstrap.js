@@ -15,7 +15,7 @@
             
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop;
-  
+   
     // Grids
     var sec_grids = document.getElementById("sec_grids");
     var btn_grids = document.getElementById("btn_grids");
