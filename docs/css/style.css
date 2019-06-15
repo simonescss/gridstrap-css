@@ -1,3 +1,15 @@
+
+#btn_ex i{
+    border: none;
+    margin-right: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+#btn_ex{
+    background: #645CED;
+    color: #02F1C9;
+}
+
 @media(max-width: 1100px){
     
     /* Grids */
