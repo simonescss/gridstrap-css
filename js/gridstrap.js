@@ -85,16 +85,16 @@
   //   }
 
     // Lax.js
-    window.onload = function() {
+    // window.onload = function() {
               
-          lax.setup() // init
+    //       lax.setup() // init
 
-          const updateLax = () => {
+    //       const updateLax = () => {
               
-              lax.update(window.scrollY)
-              window.requestAnimationFrame(updateLax)
-          }
+    //           lax.update(window.scrollY)
+    //           window.requestAnimationFrame(updateLax)
+    //       }
           
-          window.requestAnimationFrame(updateLax)
-      }
+    //       window.requestAnimationFrame(updateLax)
+    //   }
 
