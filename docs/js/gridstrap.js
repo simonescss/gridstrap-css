@@ -75,12 +75,12 @@
           btn_comp.classList.remove("btn_active");
         };
     
-      if (window.pageYOffset >= sec_active_ex) {
-          btn_ex.classList.add("btn_active");
-          btn_comp.classList.remove("btn_active");
-        } else {
-          btn_ex.classList.remove("btn_active");
-        };
+      // if (window.pageYOffset >= sec_active_ex) {
+      //    btn_ex.classList.add("btn_active");
+      //    btn_comp.classList.remove("btn_active");
+      //  } else {
+      //    btn_ex.classList.remove("btn_active");
+      //  };
         
     }
 
