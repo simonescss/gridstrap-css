@@ -24,4 +24,4 @@ Documentation: https://gridstrap.netlify.com
 ```
 
 ## License
-MIT © 2019 Simone Minniti
+MIT © 2019 [Simone Minniti](https://www.simoneminniti.it/).
