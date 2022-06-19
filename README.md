@@ -1,4 +1,4 @@
-# Gridstrap v1.0
+# Gridstrap
 Framework with CSS grid
 
 Documentation: https://gridstrap.netlify.com
